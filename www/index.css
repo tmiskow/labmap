@@ -1,0 +1,150 @@
+body {
+	box-sizing: border-box;
+	font-family: "PT Sans Caption";
+	font-style: normal;
+	font-variant: normal;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin:0;
+	padding:0;
+	background-color: lightgrey;
+}
+
+div#header {
+	padding: 10px;
+	color: white;
+	font-size: 2em;
+	line-height: 100%;
+	background-color: #0066cc;
+	text-align: center;
+
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	position: relative;
+	z-index: 5;
+}
+
+div#footer {
+	margin-top: 10px;
+	text-align: right;
+}
+
+div#footer-right {
+	padding: 0.75em;
+	display: block;
+	width: auto;
+	background-color: #263238;
+	color: white;
+	float: right;
+}
+
+div#main {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+div.card-wrapper {
+	min-width: 350px;
+	flex-basis: 20%;
+	flex-grow: 1;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+div.card {
+	background-color: white;
+	margin: 10px;
+	height: auto;
+
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	position: relative;
+	z-index: 4;
+	border-radius: 2px;
+}
+
+div.card-header {
+	position: relative;
+	color: white;
+	padding: 15px;
+	display: flex;
+	min-height: 60px;
+}
+
+div.card-header-number {
+	position: relative;
+	flex-grow: 1;
+	font-size: 1.5em;
+	margin-right: 15px;
+}
+
+div.card-header-course {
+	font-size: 1em;
+	text-align: right;
+}
+
+div.card-wrap {
+	padding: 0;
+}
+
+div.computer-block {
+	padding: 12px;
+	font-size: 0.8em;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.12);
+	border-width: 0 0 1px 0;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+div.computer-name {
+	flex-grow: 0;
+	margin-right: 10px;
+}
+
+div.computer-info {
+	display: flex;
+	flex-grow: 4;
+}
+
+div.computer-text {
+	text-align: left;
+	flex-grow: 1;
+}
+
+div.computer-icons {
+	text-align: right;
+	flex-grow: 0;
+	display: flex;
+	justify-content: center;
+}
+
+i.material-icons {
+	text-align: right;
+	font-size: 1.4em;
+}
+
+img {
+	text-align: right;
+	height: 1.2em;
+	width: auto;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.inactive {
+	color: rgba(0,0,0,0.48);
+}
+
+.hidden {
+	visibility: hidden;
+	overflow: hidden;
+	display: block;
+	box-sizing: border-box;
+	height: 0;
+}
