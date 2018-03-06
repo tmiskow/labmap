@@ -10,6 +10,29 @@ It allows students to find a perfect spot for individual studying in between cla
 
 ![](https://i.imgur.com/86bBRU6.png)
 
+## API interface
+#### URL structure: 
+`students.mimuw.edu.pl/~tm385898/labmap/api/rooms/{room_number}/computers/{computer_index}`
+#### Example:
+`students.mimuw.edu.pl/~tm385898/labmap/api/rooms/2041/computers/3`
+
+```javascript
+{
+  code: 200,
+  message: "Success.",
+  data: {
+    name: "red03",
+    state: "linux",
+    user: {
+      login: "ab123456",
+      name: "Jan",
+      surname: "Przykładowy"
+    }
+  }
+}
+```
+
+
 ## Database model
 ![](https://i.imgur.com/5JHlTDF.png)
 
